@@ -19,6 +19,12 @@
     -webkit-text-fill-color: transparent;
 }
 
+span {
+    background: -webkit-linear-gradient(-45deg, #47e100, #0365b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .gradient1 {
     width: 35rem;
     height: 35rem;

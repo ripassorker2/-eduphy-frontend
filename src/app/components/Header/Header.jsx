@@ -19,11 +19,11 @@ const manuItem = [
         icon: <CgProfile className="mr-2 h-5 w-5" aria-hidden="true" />,
     },
 
-    // {
-    //     link: "/",
-    //     name: "Report",
-    //     icon: <DiGoogleAnalytics className="mr-2 h-5 w-5" aria-hidden="true" />,
-    // },
+    {
+        link: "/addReport",
+        name: "Add Report",
+        icon: <DiGoogleAnalytics className="mr-2 h-5 w-5" aria-hidden="true" />,
+    },
 ];
 
 const Header = () => {
@@ -109,8 +109,8 @@ const Header = () => {
                                                 {manuItem?.map((item, i) => (
                                                     <Menu.Item key={i}>
                                                         {({active}) => (
-                                                            <div
-                                                                // href={`${item.link}`}
+                                                            <Link
+                                                                href={`${item.link}`}
                                                                 className={`${
                                                                     active
                                                                         ? "bg-[#00bd29] text-white"
@@ -130,7 +130,7 @@ const Header = () => {
                                                                     </span>
                                                                 )}
                                                                 {item.name}
-                                                            </div>
+                                                            </Link>
                                                         )}
                                                     </Menu.Item>
                                                 ))}

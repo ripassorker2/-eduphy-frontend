@@ -131,7 +131,7 @@ const ReportCategoryPage = ({params}) => {
                 parseInt(extraFeilds.personalDevelopment) +
                 parseInt(extraFeilds.religiousActivity);
         }
-        toast.success(data.point);
+        toast.success("Submitted Success");
         console.log(data);
     };
 
@@ -140,7 +140,7 @@ const ReportCategoryPage = ({params}) => {
             <div className="my-16">
                 {decodedString == "Hard Working Level" && (
                     <div>
-                        <h2 className="text-xl mb-4">
+                        <h2 className="text-lg mb-4">
                             1. What is your weekly study routine like?
                         </h2>
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-6">
@@ -148,7 +148,7 @@ const ReportCategoryPage = ({params}) => {
                                 <label
                                     key={index}
                                     htmlFor={generateID(index)}
-                                    className="flex items-center space-x-2 text-lg bg-black1 rounded-md px-4 py-3">
+                                    className="flex items-center space-x-2 text-base bg-black1 rounded-md px-4 py-3">
                                     <input
                                         type="radio"
                                         name="studyRoutine"
@@ -164,7 +164,7 @@ const ReportCategoryPage = ({params}) => {
                 )}
                 {decodedString == "Humanity Level" && (
                     <div>
-                        <h2 className="text-xl mb-4">
+                        <h2 className="text-lg mb-4">
                             1.How many people have you helped in the past week?
                         </h2>
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-6">
@@ -172,7 +172,7 @@ const ReportCategoryPage = ({params}) => {
                                 <label
                                     key={index}
                                     htmlFor={generateID(index)}
-                                    className="flex items-center space-x-2 text-lg bg-black1 rounded-md px-4 py-3">
+                                    className="flex items-center space-x-2 text-base bg-black1 rounded-md px-4 py-3">
                                     <input
                                         type="radio"
                                         name="humanityLevel"
@@ -188,14 +188,14 @@ const ReportCategoryPage = ({params}) => {
                 )}
                 {decodedString == "Honesty Level" && (
                     <div>
-                        <h2 className="text-xl mb-4">
+                        <h2 className="text-lg mb-4">
                             1.During the past week, how many lies have you told?
                         </h2>
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-6">
                             {liesArray.map((lie, index) => (
                                 <label
                                     key={index}
-                                    className="flex items-center space-x-2 text-lg bg-black1 rounded-md px-4 py-3">
+                                    className="flex items-center space-x-2 text-base bg-black1 rounded-md px-4 py-3">
                                     <input
                                         type="radio"
                                         name="liesCount"
@@ -211,7 +211,7 @@ const ReportCategoryPage = ({params}) => {
                 )}
                 {decodedString == "Relationship with Parents" && (
                     <div>
-                        <h2 className="text-xl mb-4">
+                        <h2 className="text-lg mb-4">
                             1. How many orders of your parents have you followed
                             in the concerned week?
                         </h2>
@@ -219,7 +219,7 @@ const ReportCategoryPage = ({params}) => {
                             {orderFollowedArray.map((option, index) => (
                                 <label
                                     key={index}
-                                    className="flex items-center space-x-2 text-lg bg-black1 rounded-md px-4 py-3">
+                                    className="flex items-center space-x-2 text-base bg-black1 rounded-md px-4 py-3">
                                     <input
                                         type="radio"
                                         name="ordersFollowed"
@@ -235,14 +235,14 @@ const ReportCategoryPage = ({params}) => {
                 )}
                 {decodedString == "Tree plantitaion" && (
                     <div>
-                        <h2 className="text-xl mb-4">
+                        <h2 className="text-lg mb-4">
                             1. How many trees planting in last one month?
                         </h2>
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-6">
                             {treePlantitionArray.map((option, index) => (
                                 <label
                                     key={index}
-                                    className="flex items-center space-x-2 text-lg bg-black1 rounded-md px-4 py-3">
+                                    className="flex items-center space-x-2 text-base bg-black1 rounded-md px-4 py-3">
                                     <input
                                         type="radio"
                                         name="treePlantation"
@@ -258,12 +258,12 @@ const ReportCategoryPage = ({params}) => {
                 {decodedString == "Extra curricular activities" && (
                     <div>
                         <div className="mb-6">
-                            <h2 className="text-xl mb-2">
+                            <h2 className="text-lg mb-2">
                                 1. Did you read any books outside of textbooks
                                 in last week?
                             </h2>
                             <div className="flex space-x-6 items-center">
-                                <label className="flex items-center space-x-2 text-lg">
+                                <label className="flex items-center space-x-2 ">
                                     <input
                                         type="radio"
                                         name="bookRead"
@@ -272,7 +272,7 @@ const ReportCategoryPage = ({params}) => {
                                     />
                                     <p>Yes</p>
                                 </label>
-                                <label className="flex items-center space-x-2 text-lg ">
+                                <label className="flex items-center space-x-2 ">
                                     <input
                                         type="radio"
                                         name="bookRead"
@@ -285,12 +285,12 @@ const ReportCategoryPage = ({params}) => {
                         </div>
 
                         <div className="mb-6">
-                            <h2 className="text-xl mb-2">
+                            <h2 className="text-lg mb-2">
                                 2. Did you participate in any religious
                                 activities in last week?
                             </h2>
                             <div className="flex space-x-6 items-center">
-                                <label className="flex items-center space-x-2 text-lg">
+                                <label className="flex items-center space-x-2 ">
                                     <input
                                         type="radio"
                                         name="religiousActivity"
@@ -299,7 +299,7 @@ const ReportCategoryPage = ({params}) => {
                                     />
                                     <p>Yes</p>
                                 </label>
-                                <label className="flex items-center space-x-2 text-lg ">
+                                <label className="flex items-center space-x-2 ">
                                     <input
                                         type="radio"
                                         name="religiousActivity"
@@ -312,12 +312,12 @@ const ReportCategoryPage = ({params}) => {
                         </div>
 
                         <div className="mb-6">
-                            <h2 className="text-xl mb-2">
+                            <h2 className="text-lg mb-2">
                                 3. Did you perform any activities for personal
                                 development in last week?
                             </h2>
                             <div className="flex space-x-6 items-center">
-                                <label className="flex items-center space-x-2 text-lg">
+                                <label className="flex items-center space-x-2 ">
                                     <input
                                         type="radio"
                                         name="personalDevelopment"
@@ -326,7 +326,7 @@ const ReportCategoryPage = ({params}) => {
                                     />
                                     <p>Yes</p>
                                 </label>
-                                <label className="flex items-center space-x-2 text-lg ">
+                                <label className="flex items-center space-x-2 ">
                                     <input
                                         type="radio"
                                         name="personalDevelopment"

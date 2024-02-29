@@ -1,5 +1,4 @@
 "use client";
-import {getUserInfoFromToken} from "@/utils/getUserInfoFromToken";
 import React, {createContext, useContext, useEffect, useState} from "react";
 
 export const UserContext = createContext();
@@ -14,7 +13,6 @@ export const AuthProvider = ({children}) => {
         setToken(localStorage.getItem("accessToken") || "");
         setUserId(localStorage.getItem("userId") || "");
         if (userId) {
-            // const decodedInfo = getUserInfoFromToken(token);
             fetch(`https://eduphy-server.vercel.app/api/v1/user/${userId}`, {
                 headers: {
                     authorization: `${token}`,
